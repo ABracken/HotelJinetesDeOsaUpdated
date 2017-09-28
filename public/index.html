@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="wilih=device-wilih, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Jinetes de Osa</title>
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic|Playfair+Display:400,400italic,700,700italic,900,900italic'
@@ -72,8 +72,15 @@
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li class="active"><a href="index.html">Home</a></li>
 						<li class="dropdown">
+							<a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resort</a>
+							<ul class="dropdown-menu">
+								<li><a href="rooms-col-1.html">Resort Description</a></li>
+								<li><a href="rooms-col-1.html">Travel Directions</a></li>
+								<li><a href="rooms-col-1.html">Departure Checklist</a></li>
+							</ul>
+						</li>
+						<!--<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resort <span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a href="404.html">404 Error</a></li>
@@ -87,25 +94,17 @@
 								<li><a href="gallery-col-3.html">Gallery 3 Columns</a></li>
 								<li><a href="blog-single.html">Blog Single Post</a></li>
 							</ul>
-						</li>
+						</li> -->
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rooms <span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Rooms</a>
 							<ul class="dropdown-menu">
-								<li><a href="rooms-col-1.html">1 Column</a></li>
-								<li><a href="rooms-col-2.html">2 Column</a></li>
-								<li><a href="rooms-col-3.html">3 Column</a></li>
-								<li><a href="rooms-col-4.html">4 Column</a></li>
-								<li><a href="rooms-single.html">Single Room</a></li>
+								<li><a href="rooms-col-1.html">Rooms and Rates</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Activities <span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Activities</a>
 							<ul class="dropdown-menu">
-								<li><a href="rooms-col-1.html">1 Column</a></li>
-								<li><a href="rooms-col-2.html">2 Column</a></li>
-								<li><a href="rooms-col-3.html">3 Column</a></li>
-								<li><a href="rooms-col-4.html">4 Column</a></li>
-								<li><a href="rooms-single.html">Single Room</a></li>
+								<li><a href="rooms-col-1.html">Activities and Rates</a></li>
 							</ul>
 						</li>
 						<li><a href="blog.html">Rates </a></li>
@@ -126,7 +125,7 @@
 
 
 		<!-- Wrapper for slides -->
-		<div class="carousel-inner" data-flickity-options='{ "wrapAround": true, "autoPlay": 10000 }' role="listbox">
+		<div class="carousel-inner" data-flickity-options='{ "wrapAround": true, "autoPlay": 10000 }' role="listbox" id="home">
 			<div class="item carousel active beactive">
 				<img class="carousel-cell" src="images/slide-1.jpg" alt="...">
 				<div class="carousel-caption">
@@ -273,7 +272,12 @@
 									<a href="#" class="btn btn-main">Book</a>
 								</figcaption>
 							</figure>
-						</div>
+							</div>
+							<div class="col-md-12">
+								
+								<div class="flex-btn"><button class="flex-btn-btn btn-main btn">See Our Great Rooms</button></div>
+							
+							</div>
 					</div>
 				</div>
 			</div>
@@ -477,8 +481,8 @@
 		<div class="mg-footer-widget">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-3">
-						<div class="widget">
+					<div class="col-xs-6 col-sm-4 col-sm-offset-1">
+						<div class="widget ">
 							<h2 class="mg-widget-title">Contact US</h2>
 							<address>
 								<strong>US Mailing Address</strong><br><br>Costa Rica Ventures<br> 831 S. Newcombe Way<br> Lakewood, CO 80225
@@ -493,7 +497,7 @@
 							</p>
 						</div>
 					</div>
-					<div class="col-md-3 col-md-offset-1">
+					<div class="col-xs-6 col-sm-3">
 						<div class="widget">
 							<h2 class="mg-widget-title">Instagram</h2>
 							<ul class="mg-instagram">
@@ -510,11 +514,10 @@
 						</div>
 					</div>
 				
-					<div class="col-md-4 col-md-offset-1">
+					<div class="col-xs-6 col-sm-3 col-sm-offset-1">
 						<div class="widget">
 							<h2 class="mg-widget-title">Social Media</h2>
-							<p>Tibi alienus possimus nomini legendus pariatur, logikh assidua philosophis expectat occultarum accedit suscipit interrogari
-								difficilius respanidisti.</p>
+
 							<ul class="mg-footer-social">
 								<li><a href="https://www.facebook.com/Hotel-Jinetes-de-Osa-193502544014375"><i class="fa fa-facebook"></i></a></li>
 								
@@ -533,10 +536,11 @@
  
 					<div class="col-md-6">
 						<ul class="mg-footer-nav">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About</a></li>
+							<li><a href="#">Resort</a></li>
 							<li><a href="#">Rooms</a></li>
 							<li><a href="#">Activities</a></li>
+							<li><a href="#">Rates</a></li>
+							<li><a href="#">Gallery</a></li>
 							<li><a href="#">Contact</a></li>
 						</ul>
 					</div>
